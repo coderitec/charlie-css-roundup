@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    text-decoration: none;
+    list-style-type: none;
+    --color-:#02360a;
+    --alice-:aliceblue;
+    --bg-color: #010649;
+}
+
+@media all {
+
+    section:first-of-type img{
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+    }
+
+    #home div:first-of-type{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: justify;
+    }
+
+    #home header{
+        text-align: center;
+        text-transform: capitalize;
+
+    }
+
+
+     #home div:first-of-type span {
+        color: var(--color-);
+     }
+}
+
+@media  screen and (max-width: 480px){
+        section:first-of-type{
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        color: var(--alice-);
+        background-color: var(--bg-color);
+        text-align: justify;
+        padding:.4rem 1rem;
+    }
+    nav {
+        position: static;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 100vh;
+        background-color: var(--bg-color);
+        color: aliceblue;
+    }
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 100%;
+    }
+
+    nav ul li{
+        width: 100%;
+        text-align: center;
+        padding: 1rem 0;
+        box-shadow: 0 0 15px whitesmoke;
+    }
+
+    nav li:hover{
+        background-color: #651002;
+        color: var(--alice-);
+    }
+
+    nav a{
+        color: inherit;
+    }
+
+    
+    #about{
+        background-color: var(--bg-color);
+        color: var(--alice-);
+    }
+    #about a{
+        color: var(--alice-);
+    }
+    #about a:visited, a:hover{
+        color: var(--color-);
+    }
+
+    #about  h2{
+        text-align: center;
+        text-transform: capitalize;
+        margin: 1rem 0;
+
+    }
+
+    #about div{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+    }
+
+    #about dl{
+        width: 100%;
+
+    }
+
+    #about dt{
+        color: var(--alice-);
+        background-color: var(--color-);
+        text-transform: uppercase;
+        padding: .5rem .2rem;
+    }
+
+    #about dd{
+        padding-block: .5rem;
+        margin-bottom: 1rem;
+        text-transform: capitalize;
+    }
+
+    
+    #projects h2{
+        text-align: center;
+    }
+
+    #projects div{
+        display: grid;
+        gap: 15px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 200px);
+    }
+
+        #projects article{
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 0 15px var(--bg-color);
+        text-transform: uppercase;
+        color: var(--bg-color);
+    }
+    
+    
+}
+@media  screen and (min-width: 481px) , (orientation: landscape) {
+    section:first-of-type{
+        min-height: fit-content;
+        display: flex;
+        flex-direction: column;
+        color: var(--alice-);
+        background-color: var(--bg-color);
+        text-align: justify;
+        padding:.4rem 1rem;
+    }
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 20vh;
+        background-color: #010649;
+        opacity: 0.9;
+        color: var(--alice-);
+    }
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        height: 100%;
+    }
+    
+    nav ul li{
+        width: 100%;
+        text-align: center;
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-radius: 5px;
+        box-shadow: 0 0 5px var(--alice-);
+    }
+    
+    nav li:hover{
+        background-color: var(--color-);
+        color: aliceblue;
+    }
+    
+    nav a{
+        color: inherit;
+    }
+    
+    main{
+        position: relative;
+        z-index: -1;
+        top: 20vh;
+    }
+
+    #about{
+        background-color: var(--bg-color);
+        color: var(--alice-);
+    }
+    #about a{
+        color: var(--alice-);
+    }
+    #about a:visited, a:hover{
+        color: var(--color-);
+    }
+
+    #about  h2{
+        text-align: center;
+        text-transform: capitalize;
+        margin: 1rem 0;
+
+    }
+
+    #about div{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-around;
+    }
+
+    #about dt{
+        color: var(--alice-);
+        background-color: var(--color-);
+        text-transform: uppercase;
+        padding: .5rem .2rem;
+    }
+
+    #about dd{
+        padding-block: .5rem;
+        margin-bottom: 1rem;
+        text-transform: capitalize;
+    }
+
+    #projects h2{
+        text-align: center;
+    }
+
+    #projects div{
+        display: grid;
+        gap: 15px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 200px);
+    }
+
+    #projects article{
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 0 15px var(--bg-color);
+        text-transform: uppercase;
+        color: var(--bg-color);
+    }
+    
+}
+
+@media  screen and (min-width: 980px) {
+    
+    #projects div{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 200px);
+    }
+    #contact{
+        padding: 1rem;
+    }
+
+    #contact form{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(5, 100px);
+        gap: 15px;
+    }
+
+    #contact form div:first-of-type{
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+    }
+    #contact form div:nth-of-type(3){
+        grid-column: 1 / 4;
+        grid-row: 2 / 3;
+    }
+    #contact form div:nth-of-type(4){
+        grid-column: 1 / 4;
+        grid-row: 3 / 4;
+    }
+    #contact form > :last-child{
+        grid-column: 2 /3;
+        grid-row: 5/ 6;
+        border-radius: 15px;
+    }
+
+    #contact form > :last-child:hover{
+        background-color: var(--color-);
+        color: var(--alice-);
+    }
+     #contact  input, textarea, button{
+        width: 100%;
+        padding:1rem;
+        outline: none;
+        border: 1px solid var(--color-);
+        border-radius: 5px;
+        box-shadow: 0 0 25px var(--bg-color);
+     }
+
+    #contact label{
+        display: block;
+        font-size: 24px;
+        padding-block-end: 10px;
+        text-transform: capitalize;
+    }
+}

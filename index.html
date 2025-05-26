@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my portfolio</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="home">
+            <div>
+                <img src="./me.jpg" alt="Franc trying to smile on his head shot">
+
+                <header>
+                    <h1>francis enemuo (code<span>rite</span>)</h1>
+                    <p>fullstack developer and facilitator</p>
+                </header>
+            </div>
+            <div>
+                <p>I am a passionate fullstack developer with a keen interest in building scalable and efficient web applications. My journey in tech began with curiosity and has grown into a deep commitment to mastering both frontend and backend technologies. I enjoy solving complex problems and turning ideas into reality through code.</p>
+
+                <p>As a facilitator, I thrive on sharing knowledge and empowering others to achieve their goals. I have experience mentoring aspiring developers, leading workshops, and contributing to collaborative projects. My approach emphasizes clarity, patience, and hands-on learning.</p>
+
+                <p>Outside of coding, I am always exploring new trends in technology and seeking opportunities for personal and professional growth. I value creativity, teamwork, and continuous improvement, and I am dedicated to making a positive impact in every project I undertake.</p>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <div>
+                <dl>
+                    <dt>date of birth</dt>
+                    <dd>
+                        <time datetime="2025-05-26">
+                            <script>
+                                document.write(new Date('2025-05-26').toLocaleDateString('fr-FR', {
+                                    weekday: 'long',
+                                    year: 'numeric',
+                                    month: 'long',
+                                    day: 'numeric'
+                                }));
+                            </script>
+                        </time>
+                    </dd>
+                    <dt>gender</dt>
+                    <dd>male</dd>
+                    <dt>education</dt>
+                    <dd>ahmadu bello university zaria</dd>
+                    <dt>nationality</dt>
+                    <dd>nigerian</dd>
+                    
+                </dl>
+
+                <dl>
+                    <dt>address</dt>
+                    <dd>
+                        <address>42 montgomery sabo yaba</address>
+                    </dd>
+                    <dt>phone</dt>
+                    <dd>
+                        <a href="tel:+2349030000000">+234 903 000 0000</a>
+                    </dd>
+                    <dt>email</dt>
+                    <dd>
+                        <a href="mailto:francenemuo@gmail.com">francenemuo@gmail.com</a>
+                    </dd>
+                </dl>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div>
+                <article>
+                    <h2>palindrome checker</h2>
+                </article>
+                <article>
+                    <h2>digital clock</h2>
+                </article>
+                <article>
+                    <h2>bmi calculator</h2>
+                </article>
+                <article>
+                    <h2>scientific calculator </h2>
+                </article>
+                <article>
+                    <h2>analog clock </h2>
+                </article>
+                <article>
+                    <h2>age calculator</h2>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div>
+                <h2>Contact Me</h2>
+                <p>How to get in touch with me.</p>
+            </div>
+            <form>
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="tel">phone number:</label>
+                    <input type="tel" id="tel" name="tel" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,29 @@
+{
+  "name": "charlie-css-roundup",
+  "version": "1.0.0",
+  "description": "workalong using tailwindcss",
+  "main": "index.js",
+  "scripts": {
+    "charles": "npx @tailwindcss/cli -i ./input.css -o ./src/output.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coderitec/charlie-css-roundup.git"
+  },
+  "keywords": [
+    "tailwindcss",
+    "css",
+    "html"
+  ],
+  "author": "Franc Enemuo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/coderitec/charlie-css-roundup/issues"
+  },
+  "homepage": "https://github.com/coderitec/charlie-css-roundup#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.7",
+    "tailwindcss": "^4.1.7"
+  }
+}

@@ -1,1 +1,68 @@
 @import "tailwindcss";
+
+@theme {
+    --color-cheese: #02360a;
+    --color-bread: #010649;
+    --color-alice: aliceblue;
+}
+
+@layer components{
+    .nav {
+        @apply flex flex-col items-center justify-around h-full sm:flex-row sm:justify-around ;
+    }
+
+    .main-nav{
+        @apply static inset-x-0 bg-bread/95 text-alice h-screen sm:h-[20vh] sm:fixed
+    }
+
+    .flex-center {
+        @apply flex flex-col items-center justify-center;
+    }
+
+    .flex-start{
+        @apply flex flex-col sm:flex-row items-start justify-around;
+    }
+
+    .project-grid{
+        @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 grid-rows-6 sm:grid-rows-3 md:grid-rows-2 gap-4 p-4 ;
+    }
+
+    .contact-form{
+        @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 p-4;
+    }
+}
+
+@layer base{
+    nav li{
+        @apply w-full text-center py-4 mx-4 rounded-[5px] shadow-[0_0_5px_var(--color-alice)] hover:bg-cheese;
+    }
+
+    h2{
+        @apply text-center text-2xl font-bold bg-cheese text-alice p-4  shadow-lg;
+    }
+
+    dt{
+        @apply text-lg font-semibold bg-cheese/75 my-4 pl-4 capitalize;
+    }
+
+    article{
+        @apply rounded-lg shadow-[0_0_5px_var(--color-alice)] border-8 border-bread border-solid  uppercase text-bread h-64 flex flex-col items-center justify-center;
+    }
+
+    h2 + p{
+        @apply text-center text-lg bg-bread/55 text-alice p-4;
+    }
+
+    label{
+        @apply block font-semibold text-lg mb-2 capitalize;
+    }
+
+    input,textarea{
+        @apply w-full p-2 border-2 border-bread rounded-lg shadow-2xl;
+    }
+
+    button{
+        @apply w-3/5 p-2 bg-cheese text-alice font-bold rounded-lg shadow-lg hover:bg-bread  transition-colors duration-300 block m-auto;
+    }
+}
+

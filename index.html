@@ -5,24 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>my portfolio</title>
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./src/output.css">
 </head>
 <body>
-    <nav>
-        <ul>
+    <nav class="main-nav">
+        <ul class="nav">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
-    <main>
-        <section id="home">
-            <div>
-                <img src="./me.jpg" alt="Franc trying to smile on his head shot">
+    <main class="sm:relative sm:z-[-1] sm:top-[20vh]">
+        <section id="home" class="bg-bread text-alice p-4">
+            <div class="flex-center">
+                <img src="./me.jpg" alt="Franc trying to smile on his head shot"
+                class="rounded-full w-32 h-32 sm:w-48 sm:h-48">
 
-                <header>
-                    <h1>francis enemuo (code<span>rite</span>)</h1>
+                <header class="text-center">
+                    <h1 class="font-bold">francis enemuo (code<span class="text-cheese">rite</span>)</h1>
                     <p>fullstack developer and facilitator</p>
                 </header>
             </div>
@@ -37,7 +38,8 @@
 
         <section id="about">
             <h2>About Me</h2>
-            <div>
+            <p>Get to know who I am</p>
+            <div class="flex-start bg-bread text-alice p-4">
                 <dl>
                     <dt>date of birth</dt>
                     <dd>
@@ -80,24 +82,25 @@
 
         <section id="projects">
             <h2>Projects</h2>
-            <div>
+            <p>Some of my projects</p>
+            <div class="project-grid">
                 <article>
-                    <h2>palindrome checker</h2>
+                    <h3>palindrome checker</h3>
                 </article>
                 <article>
-                    <h2>digital clock</h2>
+                    <h3>digital clock</h3>
                 </article>
                 <article>
-                    <h2>bmi calculator</h2>
+                    <h3>bmi calculator</h3>
                 </article>
                 <article>
-                    <h2>scientific calculator </h2>
+                    <h3>scientific calculator </h3>
                 </article>
                 <article>
-                    <h2>analog clock </h2>
+                    <h3>analog clock </h3>
                 </article>
                 <article>
-                    <h2>age calculator</h2>
+                    <h3>age calculator</h3>
                 </article>
             </div>
         </section>
@@ -107,8 +110,8 @@
                 <h2>Contact Me</h2>
                 <p>How to get in touch with me.</p>
             </div>
-            <form>
-                <div>
+            <form class="contact-form" action="#" method="post">
+                <div class="md:col-span-2 sm:col-span-1">
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="name" required>
                 </div>
@@ -116,16 +119,17 @@
                     <label for="tel">phone number:</label>
                     <input type="tel" id="tel" name="tel" required>
                 </div>
-                <div>
+                <div class="md:col-span-3 sm:col-span-1">
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email" required>
                 </div>
-                <div>
+                <div class="md:col-span-3 sm:col-span-2">
                     <label for="message">Message:</label>
                     <textarea id="message" name="message" rows="4" required></textarea>
                 </div>
-                
-                <button type="submit">Send Message</button>
+                <div class="md:col-span-3 sm:col-span-2">
+                    <button type="submit">Send Message</button>
+                </div>
             </form>
         </section>
     </main>
